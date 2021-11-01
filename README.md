@@ -10,6 +10,7 @@ Clone the code from GitHub:
 
 ```bash
 git clone https://github.com/alsugiharto/github_events_stream
+cd github_events_stream
 ```
 
 Run the streamer script
