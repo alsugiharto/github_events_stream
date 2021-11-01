@@ -4,13 +4,16 @@ Github event streamer
 
 ## How to run the solution
 
-Install all the [Libraries to install](#libraries-to-install)
-
 Clone the code from GitHub:
 
 ```bash
 git clone https://github.com/alsugiharto/github_events_stream
 cd github_events_stream
+```
+
+Install all the dependencies
+```bash
+pip install -r requirements.txt
 ```
 
 Run the streamer script
@@ -30,7 +33,7 @@ python api.py
 
 Try some API requests! in [The API Endpoints](#the-api-endpoints)
 
-## The API Endpoints
+## API Endpoints
 
 #### Average Pull Request Time
 Calculating the average time between pull requests for a repository. It is mandatory to give a repository ID as an input. Below is the example of a request asking for a repository id of "213547521". 
@@ -57,20 +60,6 @@ Assumptions made:
 - There is no limit in using the GitHub API requests
 - All the last versions of libraries and their dependencies used in this solution are installed
 
-## Libraries to install
-- git
-- python 3
-- CSV
-- time
-- JSON
-- requests
-- pandas
-- DateTime
-- io
-- base64
-- matplotlib
-- flask-restful
-
 ## Files
 
 - `flask_restful`: Folder of the flask API framework.
@@ -86,3 +75,5 @@ Assumptions made:
 - `events.csv`: The CSV file consist of all the events recorded by the streaming script. The file already consists of some records for testing purposes. The file has 4 columns (from left to right): Event ID, Event Type, Date, Repository ID, Repository Name.
 
 - `overview.png`: The image file of a bar chart of the number of events of each event recorded in the events.csv in the last 1 day.
+
+- `requirements.txt`: List all the dependencies
