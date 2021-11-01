@@ -16,6 +16,7 @@ def overview(offset):
 	FMT = '%Y-%m-%dT%H:%M:%SZ'
 	try:
 		offset = int(offset)
+		offset *= 60
 	except:
 		return ({'message': 'invalid input'})
 	# get now time + offsets
@@ -36,7 +37,7 @@ def overview(offset):
 def main():
 	const_timer = 60
 	# a day
-	offset = 86400
+	offset = 14400
 
 	while True:
 
