@@ -71,6 +71,11 @@ Assumptions made:
 - flask-restful
 
 ## Files
+
+- `flask_restful`: Folder of the flask API framework.
+
+- `C4 Diagram`: Folder of C4 Diagram Documentation
+
 - `api.py`: The RESTful API app. Run this app to be able to make the API request.
  
 - `github_event_streamer.py`: The script that streams the GitHub events saving important data into events.csv.
