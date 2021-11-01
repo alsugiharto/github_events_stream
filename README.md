@@ -6,7 +6,7 @@ Github event streamer
 
 Install all the [Libraries to install](#libraries-to-install)
 
-Clone the code from github:
+Clone the code from GitHub:
 
 ```bash
 git clone https://github.com/alsugiharto/github_events_stream
@@ -17,7 +17,7 @@ Run the streamer script
 python github_event_streamer.py
 ```
 
-Run the overview visualisation script
+Run the overview visualization script
 ```bash
 python overview_visualisation.py
 ```
@@ -32,13 +32,13 @@ Try some API requests! in [The API Endpoints](#the-api-endpoints)
 ## The API Endpoints
 
 #### Average Pull Request Time
-Calculating the average time between pull requests for a repository. It is mandatory to give a repository ID as an input. Below is the example of request asking for an repository id of "213547521". 
+Calculating the average time between pull requests for a repository. It is mandatory to give a repository ID as an input. Below is the example of a request asking for a repository id of "213547521". 
 ```bash
 curl http://localhost:5000/averagepulltime/213547521
 ```
 
 #### Overview using offset
-Returning the total number of events grouped by the event type for a given offset. An offset is mandatory. The offset determines how much time we want to look back i.e., an offset of 10 means we count only the events which have been created in the last 10 minutes, for example:
+Returning the total number of events grouped by the event type for a given offset. An offset is mandatory. The offset determines how much time we want to look back i.e., an offset of 10 means we count only the events which have been created in the last 10 minutes, for example:
 ```bash
 curl http://localhost:5000/overview/10
 ```
@@ -54,29 +54,29 @@ curl http://localhost:5000/overview_visualize
 
 Assumptions made:
 - There is no limit in using the GitHub API requests
-- All the last version of libraries and their dependencies used in this solution are installed
+- All the last versions of libraries and their dependencies used in this solution are installed
 
 ## Libraries to install
 - git
 - python 3
-- csv
+- CSV
 - time
-- json
+- JSON
 - requests
 - pandas
-- datetime
+- DateTime
 - io
 - base64
 - matplotlib
 - flask-restful
 
 ## Files
-- `api.py`: The RESTful API app. Run this app to be able making the API request.
+- `api.py`: The RESTful API app. Run this app to be able to make the API request.
  
 - `github_event_streamer.py`: The script that streams the GitHub events saving important data into events.csv.
  
-- `overview_visualisation.py`: The script that updates overview.png file to plot a bar chart.
+- `overview_visualisation.py`: The script that updates the overview.png file to plot a bar chart.
  
-- `events.csv`: The csv file consist of all the events recorded by the streaming script. The file already consist of some records for testing purpose. The file has 4 columns (from left to right): Event ID, Event Type, Date, Repository ID, Repository Name.
+- `events.csv`: The CSV file consist of all the events recorded by the streaming script. The file already consists of some records for testing purposes. The file has 4 columns (from left to right): Event ID, Event Type, Date, Repository ID, Repository Name.
 
-- `overview.png`: The image file of a bar chart of number of events of each event recorded in the events.csv in the last 1 day.
+- `overview.png`: The image file of a bar chart of the number of events of each event recorded in the events.csv in the last 1 day.
