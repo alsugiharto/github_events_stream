@@ -7,6 +7,7 @@ A few assumptions made if you want to run this solution:
 - You have a conda installed for environtment management: https://conda.io/projects/conda/en/latest/index.html
 - You have git installed
 - There is no limit in using the GitHub API requests (there is)
+- You have no python virtual environtment named github_event_streamer yet
 
 ## How to run the solution
 
@@ -23,7 +24,7 @@ conda env create -f environtment.yml
 
 Activate the new environtment
 ```bash
-conda activate myenv
+conda activate github_event_streamer
 ```
 
 Run the streamer script
@@ -79,4 +80,4 @@ curl http://localhost:5000/overview_visualize
 
 - `overview.png`: The image file of a bar chart of the number of events of each event recorded in the events.csv in the last 1 day.
 
-- `requirements.txt`: List all the dependencies
+- `environtment.yml`: List all the environtment dependencies
