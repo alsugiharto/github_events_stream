@@ -2,18 +2,27 @@
 
 Github event streamer
 
+## Assumptions
+
+A few assumptions made if you want to run this solution:
+- You have a conda installed for environtment management: https://conda.io/projects/conda/en/latest/index.html
+- There is no limit in using the GitHub API requests (there is)
+
 ## How to run the solution
+Create a new python virtual environtment and install all the dependencies in it
+```bash
+conda env create -f environment.yml
+```
+
+Activate the new environtment
+```bash
+conda activate myenv
+```
 
 Clone the code from GitHub:
-
 ```bash
 git clone https://github.com/alsugiharto/github_events_stream
 cd github_events_stream
-```
-
-Install all the dependencies
-```bash
-pip install -r requirements.txt
 ```
 
 Run the streamer script
@@ -52,13 +61,6 @@ Drawing a bar chart showing the number of events grouped by the event type in th
 ```bash
 curl http://localhost:5000/overview_visualize
 ```
-
-
-## Assumptions
-
-Assumptions made:
-- There is no limit in using the GitHub API requests
-- All the last versions of libraries and their dependencies used in this solution are installed
 
 ## Files
 
