@@ -3,12 +3,18 @@
 Github event streamer
 
 ## Assumptions
-
 A few assumptions made if you want to run this solution:
 - You have a conda installed for environtment management: https://conda.io/projects/conda/en/latest/index.html
 - There is no limit in using the GitHub API requests (there is)
 
 ## How to run the solution
+
+Clone the code from GitHub:
+```bash
+git clone https://github.com/alsugiharto/github_events_stream
+cd github_events_stream
+```
+
 Create a new python virtual environtment and install all the dependencies in it
 ```bash
 conda env create -f environment.yml
@@ -17,12 +23,6 @@ conda env create -f environment.yml
 Activate the new environtment
 ```bash
 conda activate myenv
-```
-
-Clone the code from GitHub:
-```bash
-git clone https://github.com/alsugiharto/github_events_stream
-cd github_events_stream
 ```
 
 Run the streamer script
