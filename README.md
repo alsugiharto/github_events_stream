@@ -43,7 +43,7 @@ Run the API app
 python api.py
 ```
 
-Try some API requests! in [The API Endpoints](#the-api-endpoints)
+Try some API requests! in [API Endpoints](#api-endpoints)
 
 ## API Endpoints
 
