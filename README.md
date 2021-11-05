@@ -5,9 +5,10 @@ Github event streamer
 ## Assumptions
 A few assumptions made if you want to run this solution:
 - You have a conda installed for environtment management: https://conda.io/projects/conda/en/latest/index.html
-- You have git installed
+- You have git installed https://git-scm.com/
 - There is no limit in using the GitHub API requests (there is)
 - You have no python virtual environtment named github_event_streamer yet
+- You work on unix system, for windows please look for the windows version for each script in "How to run the solution"
 
 ## How to run the solution
 
