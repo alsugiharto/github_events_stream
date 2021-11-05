@@ -5,6 +5,7 @@ Github event streamer
 ## Assumptions
 A few assumptions made if you want to run this solution:
 - You have a conda installed for environtment management: https://conda.io/projects/conda/en/latest/index.html
+- You have git installed
 - There is no limit in using the GitHub API requests (there is)
 
 ## How to run the solution
