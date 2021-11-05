@@ -18,7 +18,7 @@ cd github_events_stream
 
 Create a new python virtual environtment and install all the dependencies in it
 ```bash
-conda env create -f environment.yml
+conda env create -f environtment.yml
 ```
 
 Activate the new environtment
