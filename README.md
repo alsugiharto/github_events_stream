@@ -24,7 +24,7 @@ cd github_events_stream
 
 Create a new python virtual environtment and install all the dependencies in it
 ```bash
-conda env create -f environtment.yml
+conda env create -f environment.yml
 ```
 
 Activate the new environtment
@@ -85,4 +85,4 @@ curl http://localhost:5000/overview_visualize
 
 - `overview.png`: The image file of a bar chart of the number of events of each event recorded in the events.csv in the last 1 day.
 
-- `environtment.yml`: List all the environtment dependencies
+- `environment.yml`: List all the environtment dependencies
