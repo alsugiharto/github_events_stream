@@ -15,6 +15,10 @@ A few assumptions made if you want to run this solution:
 Clone the code from GitHub:
 ```bash
 git clone https://github.com/alsugiharto/github_events_stream
+```
+
+Get in to the cloned repo:
+```bash
 cd github_events_stream
 ```
 
